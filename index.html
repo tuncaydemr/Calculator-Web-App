@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Project</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" />
+</head>
+<body>
+  <noscript>Dear User, Javascript is disabled in your browser. Please turn on your Javascript settings to view the page.</noscript>
+
+  <div class="calculator">
+    <div class="display">
+      <input type="text" placeholder="0" id="input" disabled />
+    </div>
+    <div class="buttons">
+      <input type="button" value="AC" id="clear" onclick="input.value=''" />
+      <input type="button" value="DEL" id="erase" onclick="input.value = input.value.substr(0, input.value.length - 1);" />
+      <input type="button" value="/" class="input-button" onclick="input.value+='/'" />
+      <input type="button" value="*" class="input-button" onclick="input.value+='*'" />
+      <input type="button" value="7" class="input-button" onclick="input.value+=7" />
+      <input type="button" value="8" class="input-button" onclick="input.value+=8" />
+      <input type="button" value="9" class="input-button" onclick="input.value+=9" />
+      <input type="button" value="-" class="input-button" onclick="input.value+='-'" />
+      <input type="button" value="4" class="input-button" onclick="input.value+=4" />
+      <input type="button" value="5" class="input-button" onclick="input.value+=5" />
+      <input type="button" value="6" class="input-button" onclick="input.value+=6" />
+      <input type="button" value="+" class="input-button" onclick="input.value+='+'" />
+      <input type="button" value="1" class="input-button" onclick="input.value+=1" />
+      <input type="button" value="2" class="input-button" onclick="input.value+=2" />
+      <input type="button" value="3" class="input-button" onclick="input.value+=3" />
+      <input type="button" value="=" class="equal" onclick="input.value=eval(input.value)" />
+      <input type="button" value="0" class="input-button" onclick="input.value+=0" />
+      <input type="button" value="." class="input-button" onclick="input.value+='.'" />
+    </div>
+  </div>
+
+  <script type="text/javascript" lang="javascript" src="script.js"></script>
+</body>
+</html>
